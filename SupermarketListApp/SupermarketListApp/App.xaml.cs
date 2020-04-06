@@ -1,16 +1,32 @@
-﻿using System;
+﻿using Prism;
+using Prism.DryIoc;
+using Prism.Ioc;
+using Prism.Navigation;
+using SupermarketListApp.ViewModels;
+using SupermarketListApp.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SupermarketListApp
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        public App()
+        public App() : base(null) { }
+
+        public App(IPlatformInitializer initializer) : base(initializer)
+        {
+        }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
+            await NavigationService.NavigateAsync(nameof(MainPage));
+        }
 
-            MainPage = new MainPage();
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
         }
 
         protected override void OnStart()
