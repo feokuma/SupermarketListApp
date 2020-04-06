@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -93,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SupermarketListApp\SupermarketListApp.csproj">
-      <Project>{DD98BA31-A54D-417B-91B1-50335ED2F170}</Project>
+      <Project>{36E1CE46-26AD-4058-A820-40EEE98E0FE1}</Project>
       <Name>SupermarketListApp</Name>
     </ProjectReference>
   </ItemGroup>
