@@ -3,16 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketListApp.Android", "SupermarketListApp\SupermarketListApp.Android\SupermarketListApp.Android.csproj", "{170DD654-9EF2-4776-9E05-638F6796703E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketListApp.Android", "SupermarketListApp\src\SupermarketListApp.Android\SupermarketListApp.Android.csproj", "{170DD654-9EF2-4776-9E05-638F6796703E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketListApp.iOS", "SupermarketListApp\SupermarketListApp.iOS\SupermarketListApp.iOS.csproj", "{A6506144-07C6-49F2-A208-BD8ACB2E8F51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketListApp.iOS", "SupermarketListApp\src\SupermarketListApp.iOS\SupermarketListApp.iOS.csproj", "{A6506144-07C6-49F2-A208-BD8ACB2E8F51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketListApp", "SupermarketListApp\SupermarketListApp\SupermarketListApp.csproj", "{36E1CE46-26AD-4058-A820-40EEE98E0FE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketListApp", "SupermarketListApp\src\SupermarketListApp\SupermarketListApp.csproj", "{36E1CE46-26AD-4058-A820-40EEE98E0FE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{8B964530-D440-484B-B107-23630183C7E7}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FEC5EC8B-CAB1-42B0-AF88-3F8065F1FEBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{770A0BD3-2E56-4CCC-BFA5-85A2B6D244D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketApp.UnitTests", "SupermarketListApp\test\SupermarketApp.UnitTests\SupermarketApp.UnitTests.csproj", "{1D78FD27-18D5-4369-BDD9-08688ECD353D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,11 +84,29 @@ Global
 		{36E1CE46-26AD-4058-A820-40EEE98E0FE1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{36E1CE46-26AD-4058-A820-40EEE98E0FE1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{36E1CE46-26AD-4058-A820-40EEE98E0FE1}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|iPhone.Build.0 = Release|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A55806DD-6165-4C67-A49E-0D65DA782A39}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36E1CE46-26AD-4058-A820-40EEE98E0FE1} = {FEC5EC8B-CAB1-42B0-AF88-3F8065F1FEBB}
+		{170DD654-9EF2-4776-9E05-638F6796703E} = {FEC5EC8B-CAB1-42B0-AF88-3F8065F1FEBB}
+		{A6506144-07C6-49F2-A208-BD8ACB2E8F51} = {FEC5EC8B-CAB1-42B0-AF88-3F8065F1FEBB}
+		{1D78FD27-18D5-4369-BDD9-08688ECD353D} = {770A0BD3-2E56-4CCC-BFA5-85A2B6D244D5}
 	EndGlobalSection
 EndGlobal
