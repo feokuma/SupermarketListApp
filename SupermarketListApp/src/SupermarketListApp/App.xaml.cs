@@ -27,6 +27,8 @@ namespace SupermarketListApp
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<ShoppingListView, ShoppingListViewModel>();
+            containerRegistry.RegisterForNavigation<AboutView, AboutViewModel>();
         }
 
         protected override void OnStart()
