@@ -3,10 +3,22 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SupermarketListApp.Views.ShoppingListView"
+    xmlns:controls="clr-namespace:SupermarketListApp.Controls"
     Title="Lista de compras">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Lista de compras"/>
-        </StackLayout>
+        <AbsoluteLayout>
+            <ScrollView AbsoluteLayout.LayoutBounds="1,1,1,1"
+                        AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Lista de compras"/>
+            </ScrollView>
+
+            <controls:FormsFloatingActionButton
+                IsVisible="{OnPlatform Android=true, iOS=false}"
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                Command="{Binding NavigateToSearchItemCommand}"/>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
