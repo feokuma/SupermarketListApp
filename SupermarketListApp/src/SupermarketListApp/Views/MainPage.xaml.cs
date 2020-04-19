@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SupermarketListApp.Interfaces;
 using Xamarin.Forms;
 
 namespace SupermarketListApp.Views
@@ -20,6 +21,19 @@ namespace SupermarketListApp.Views
             if (Device.RuntimePlatform == Device.iOS)
                 Children.Add(new SearchItemView());
             Children.Add(new AboutView());
+        }
+
+        protected override void OnCurrentPageChanged()
+        {
+            base.OnCurrentPageChanged();
+            if (CurrentPage is IDynamicTitle page)
+            {
+                NavigationPage.SetTitleView(this, page.GetTitle());
+                NavigationPage.SetHasNavigationBar(this, true);
+                return;
+            }
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

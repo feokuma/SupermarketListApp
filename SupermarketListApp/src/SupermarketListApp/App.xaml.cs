@@ -21,12 +21,13 @@ namespace SupermarketListApp
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync(nameof(MainPage));
+            await NavigationService.NavigateAsync($"NavigationPage/MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<ShoppingListView, ShoppingListViewModel>();
             containerRegistry.RegisterForNavigation<SearchItemView, SearchItemViewModel>();
             containerRegistry.RegisterForNavigation<AboutView, AboutViewModel>();
