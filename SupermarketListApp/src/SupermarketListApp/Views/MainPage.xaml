@@ -12,7 +12,6 @@
             x:Class="SupermarketListApp.Views.MainPage"
             Title="Sobre">
     <TabbedPage.Children>
-        <views:ShoppingListView/>
-        <views:AboutView/>
+
     </TabbedPage.Children>
 </TabbedPage>

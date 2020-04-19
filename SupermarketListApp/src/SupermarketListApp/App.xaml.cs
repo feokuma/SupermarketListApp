@@ -28,6 +28,7 @@ namespace SupermarketListApp
         {
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<ShoppingListView, ShoppingListViewModel>();
+            containerRegistry.RegisterForNavigation<SearchItemView, SearchItemViewModel>();
             containerRegistry.RegisterForNavigation<AboutView, AboutViewModel>();
         }
 

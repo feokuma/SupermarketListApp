@@ -16,6 +16,10 @@ namespace SupermarketListApp.Views
         public MainPage()
         {
             InitializeComponent();
+            Children.Add(new ShoppingListView());
+            if (Device.RuntimePlatform == Device.iOS)
+                Children.Add(new SearchItemView());
+            Children.Add(new AboutView());
         }
     }
 }
