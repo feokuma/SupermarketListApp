@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{770A0BD3-2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketApp.UnitTests", "SupermarketListApp\test\SupermarketApp.UnitTests\SupermarketApp.UnitTests.csproj", "{1D78FD27-18D5-4369-BDD9-08688ECD353D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketListApp.UITests", "SupermarketListApp\test\SupermarketListApp.UITests\SupermarketListApp.UITests.csproj", "{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,18 @@ Global
 		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|iPhone.Build.0 = Release|Any CPU
 		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{1D78FD27-18D5-4369-BDD9-08688ECD353D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Release|iPhone.Build.0 = Release|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,5 +122,6 @@ Global
 		{170DD654-9EF2-4776-9E05-638F6796703E} = {FEC5EC8B-CAB1-42B0-AF88-3F8065F1FEBB}
 		{A6506144-07C6-49F2-A208-BD8ACB2E8F51} = {FEC5EC8B-CAB1-42B0-AF88-3F8065F1FEBB}
 		{1D78FD27-18D5-4369-BDD9-08688ECD353D} = {770A0BD3-2E56-4CCC-BFA5-85A2B6D244D5}
+		{52AD77D2-9FD7-4565-BFF9-8C9B508655B3} = {770A0BD3-2E56-4CCC-BFA5-85A2B6D244D5}
 	EndGlobalSection
 EndGlobal
