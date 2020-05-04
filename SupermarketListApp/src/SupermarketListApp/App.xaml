@@ -1,13 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:prism="http://prismlibrary.com"
-             mc:Ignorable="d"
-             x:Class="SupermarketListApp.App">
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:prism="http://prismlibrary.com"
+                        mc:Ignorable="d"
+                        x:Class="SupermarketListApp.App">
     <Application.Resources>
-        <OnPlatform x:Key="FontIcons" Default="FontIcons.ttf" x:TypeArguments="x:String"/>
 
+        <ResourceDictionary>
+            <OnPlatform x:Key="FontIcons"
+                        Default="FontIcons.ttf"
+                        x:TypeArguments="x:String" />
+            <Style ApplyToDerivedTypes="true"
+                   TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor"
+                        Value="#ED2642" />
+                <Setter Property="BarTextColor"
+                        Value="White" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

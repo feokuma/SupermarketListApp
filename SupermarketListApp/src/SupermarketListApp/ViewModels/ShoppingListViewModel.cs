@@ -17,10 +17,37 @@ namespace SupermarketListApp.ViewModels
             NavigateToSearchItemCommand = new DelegateCommand(NavigateToSearchItem);
 
             ListItems = new ObservableRangeCollection<ProductItem>();
-            ListItems.Add(new ProductItem
-            {
-                Image = FontIcons.Glass,
-                Description = "Água com gás",
+            ListItems.AddRange(new [] {
+                new ProductItem
+                {
+                    Image = FontIcons.Food,
+                    Description = "Pão",
+                },
+                new ProductItem
+                {
+                    Image = FontIcons.Food,
+                    Description = "Queijo"
+                },
+                new ProductItem
+                {
+                    Image = FontIcons.Glass,
+                    Description = "Leite"
+                },
+                new ProductItem
+                {
+                    Image = FontIcons.Glass,
+                    Description = "Água com gás",
+                },
+                new ProductItem
+                {
+                    Image = FontIcons.Trash,
+                    Description = "Detergente"
+                },
+                new ProductItem
+                {
+                    Image = FontIcons.Trash,
+                    Description = "Sabão em pó"
+                }
             });
         }
 

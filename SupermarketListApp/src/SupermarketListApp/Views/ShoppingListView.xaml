@@ -3,24 +3,44 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SupermarketListApp.Views.ShoppingListView"
+    BackgroundColor="#F6F6F6"
     Title="Lista de compras">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Lista de compras" />
-            <CollectionView ItemsSource="{Binding ListItems}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Grid.Column="0"
-                                   FontFamily="{StaticResource FontIcons}"
-                                   Text="{Binding Image}" />
-                            <Label Grid.Column="1"
-                                   Text="{Binding Description}" />
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+        <Frame Margin="5"
+               Padding="5"
+               HasShadow="False">
+            <StackLayout>
+                <Label Text="Items para comprar"
+                       Margin="0, 0, 0, 10"
+                       FontAttributes="Bold" />
+                <CollectionView ItemsSource="{Binding ListItems}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <FlexLayout JustifyContent="SpaceBetween">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="#FFFCDC"
+                                           Padding="5"
+                                           WidthRequest="30"
+                                           HeightRequest="30"
+                                           HasShadow="False">
+                                        <Label Grid.Column="0"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"
+                                               FontFamily="{StaticResource FontIcons}"
+                                               FontSize="Title"
+                                               Text="{Binding Image}" />
+                                    </Frame>
+                                    <Label Grid.Column="1"
+                                           VerticalOptions="Center"
+                                           Text="{Binding Description}" />
+                                </StackLayout>
+                                <CheckBox></CheckBox>
+                            </FlexLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </Frame>
 
     </ContentPage.Content>
 </ContentPage>
