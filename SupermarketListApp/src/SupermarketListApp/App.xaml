@@ -7,6 +7,7 @@
              mc:Ignorable="d"
              x:Class="SupermarketListApp.App">
     <Application.Resources>
+        <OnPlatform x:Key="FontIcons" Default="FontIcons.ttf" x:TypeArguments="x:String"/>
 
     </Application.Resources>
 </prism:PrismApplication>

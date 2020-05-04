@@ -27,7 +27,7 @@ namespace SupermarketListApp.UITests
                     .Android
                     // TODO: Update this path to point to your Android app and uncomment the
                     // code if the app is not included in the solution.
-                    //.ApkFile ("../../../Droid/bin/Debug/xamarinforms.apk")
+                    .ApkFile ("../../../../src/SupermarketListApp.Droid/bin/Debug/xamarinforms.apk")
                     .StartApp();
             }
 
@@ -35,7 +35,7 @@ namespace SupermarketListApp.UITests
                 .iOS
                 // TODO: Update this path to point to your iOS app and uncomment the
                 // code if the app is not included in the solution.
-                //.AppBundle ("../../../iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
+                .AppBundle ("../../../../src/SupermarketLIstApp.iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
                 .StartApp();
         }
     }

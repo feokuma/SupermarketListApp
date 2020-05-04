@@ -14,8 +14,9 @@ namespace SupermarketListApp
     {
         public App() : base(null) { }
 
-        public App(IPlatformInitializer initializer) : base(initializer)
+        public App(IPlatformInitializer initializer) :base(initializer)
         {
+            Device.SetFlags(new[] { "" });
         }
 
         protected override async void OnInitialized()

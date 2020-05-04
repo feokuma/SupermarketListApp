@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using Foundation;
 using Prism;
 using Prism.Ioc;
@@ -25,6 +24,10 @@ namespace SupermarketListApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+#if ENABLE_TEST_CLOUD
+            Xamarin.Calabash.Start();
+#endif
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

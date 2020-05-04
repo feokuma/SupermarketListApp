@@ -5,11 +5,22 @@
     x:Class="SupermarketListApp.Views.ShoppingListView"
     Title="Lista de compras">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="White">
-            <ScrollView AbsoluteLayout.LayoutBounds="1,1,1,1"
-                        AbsoluteLayout.LayoutFlags="All">
-                <Label TextColor="Black" Text="Lista de compras"/>
-            </ScrollView>
+        <StackLayout>
+            <Label Text="Lista de compras" />
+            <CollectionView ItemsSource="{Binding ListItems}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Grid.Column="0"
+                                   FontFamily="{StaticResource FontIcons}"
+                                   Text="{Binding Image}" />
+                            <Label Grid.Column="1"
+                                   Text="{Binding Description}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
