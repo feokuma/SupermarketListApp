@@ -114,6 +114,66 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-76%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-1024%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-83.5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icons8-bread-100\image-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-76%401x.png" />
+    <ImageAsset Include="Assets.xcassets\bread.imageset\image-76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\image-20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\image-20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\image-20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\image-40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\image-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\image-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\cheese.imageset\image-1024%401x.png" />
+    <ImageAsset Include="Assets.xcassets\wash_machine.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\wash_machine.imageset\image-20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\wash_machine.imageset\image-20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\wash_machine.imageset\image-20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\wash_machine.imageset\image-40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\wash_machine.imageset\image-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\wash_machine.imageset\image-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\milk_bottle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\milk_bottle.imageset\image-20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\milk_bottle.imageset\image-20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\milk_bottle.imageset\image-20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\milk_bottle.imageset\image-40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\milk_bottle.imageset\image-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\milk_bottle.imageset\image-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\throat.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\throat.imageset\image-20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\throat.imageset\image-20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\throat.imageset\image-20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\throat.imageset\image-40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\throat.imageset\image-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\throat.imageset\image-40%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ingredients.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ingredients.imageset\image-20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ingredients.imageset\image-20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ingredients.imageset\image-20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ingredients.imageset\image-40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ingredients.imageset\image-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ingredients.imageset\image-40%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -139,5 +199,15 @@
       <Project>{36E1CE46-26AD-4058-A820-40EEE98E0FE1}</Project>
       <Name>SupermarketListApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\throat_spray.imageset\" />
+    <Folder Include="Assets.xcassets\bread.imageset\" />
+    <Folder Include="Assets.xcassets\cheese.imageset\" />
+    <Folder Include="Assets.xcassets\Ingredients.imageset\" />
+    <Folder Include="Assets.xcassets\wash_machine.imageset\" />
+    <Folder Include="Assets.xcassets\milk_bottle.imageset\" />
+    <Folder Include="Assets.xcassets\throat.imageset\" />
+    <Folder Include="Assets.xcassets\ingredients.imageset\" />
   </ItemGroup>
 </Project>

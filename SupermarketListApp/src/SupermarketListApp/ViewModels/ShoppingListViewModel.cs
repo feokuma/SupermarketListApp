@@ -20,32 +20,32 @@ namespace SupermarketListApp.ViewModels
             ListItems.AddRange(new [] {
                 new ProductItem
                 {
-                    Image = FontIcons.Food,
+                    Image = "bread.png",
                     Description = "Pão",
                 },
                 new ProductItem
                 {
-                    Image = FontIcons.Food,
+                    Image = "cheese.png",
                     Description = "Queijo"
                 },
                 new ProductItem
                 {
-                    Image = FontIcons.Glass,
+                    Image = "milk_bottle.png",
                     Description = "Leite"
                 },
                 new ProductItem
                 {
-                    Image = FontIcons.Glass,
-                    Description = "Água com gás",
+                    Image =  "ingredients.png",
+                    Description = "Feira",
                 },
                 new ProductItem
                 {
-                    Image = FontIcons.Trash,
+                    Image = "throat",
                     Description = "Detergente"
                 },
                 new ProductItem
                 {
-                    Image = FontIcons.Trash,
+                    Image = "wash_machine",
                     Description = "Sabão em pó"
                 }
             });

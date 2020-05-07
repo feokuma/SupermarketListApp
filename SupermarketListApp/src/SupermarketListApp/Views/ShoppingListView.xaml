@@ -3,12 +3,13 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SupermarketListApp.Views.ShoppingListView"
-    BackgroundColor="#F6F6F6"
+    BackgroundColor="#c0c0c0"
     Title="Lista de compras">
     <ContentPage.Content>
         <Frame Margin="5"
                Padding="5"
-               HasShadow="False">
+               HasShadow="False"
+               VerticalOptions="Start">
             <StackLayout>
                 <Label Text="Items para comprar"
                        Margin="0, 0, 0, 10"
@@ -16,26 +17,30 @@
                 <CollectionView ItemsSource="{Binding ListItems}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <FlexLayout JustifyContent="SpaceBetween">
-                                <StackLayout Orientation="Horizontal">
-                                    <Frame BackgroundColor="#FFFCDC"
-                                           Padding="5"
-                                           WidthRequest="30"
-                                           HeightRequest="30"
-                                           HasShadow="False">
-                                        <Label Grid.Column="0"
-                                               HorizontalOptions="Center"
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="1" />
+                                </Grid.RowDefinitions>
+                                <FlexLayout Grid.Row="0"
+                                            JustifyContent="SpaceBetween">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="#FFFCDC"
+                                               Padding="5"
+                                               WidthRequest="30"
+                                               HeightRequest="30"
+                                               HasShadow="False">
+                                            <Image Source="{Binding Image}"></Image>
+                                        </Frame>
+                                        <Label Grid.Column="1"
                                                VerticalOptions="Center"
-                                               FontFamily="{StaticResource FontIcons}"
-                                               FontSize="Title"
-                                               Text="{Binding Image}" />
-                                    </Frame>
-                                    <Label Grid.Column="1"
-                                           VerticalOptions="Center"
-                                           Text="{Binding Description}" />
-                                </StackLayout>
-                                <CheckBox></CheckBox>
-                            </FlexLayout>
+                                               Text="{Binding Description}" />
+                                    </StackLayout>
+                                    <CheckBox></CheckBox>
+                                </FlexLayout>
+                                <BoxView Grid.Row="1"
+                                         BackgroundColor="#e6e6e6" />
+                            </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
