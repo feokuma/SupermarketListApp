@@ -7,15 +7,15 @@
                         mc:Ignorable="d"
                         x:Class="SupermarketListApp.App">
     <Application.Resources>
-
         <ResourceDictionary>
+            <Color x:Key="TitleColor">#ED2642</Color>
             <OnPlatform x:Key="FontIcons"
                         Default="FontIcons.ttf"
                         x:TypeArguments="x:String" />
             <Style ApplyToDerivedTypes="true"
                    TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor"
-                        Value="#ED2642" />
+                        Value="{StaticResource TitleColor}" />
                 <Setter Property="BarTextColor"
                         Value="White" />
             </Style>

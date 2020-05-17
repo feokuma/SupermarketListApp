@@ -3,18 +3,26 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SupermarketListApp.Views.ShoppingListView"
-    BackgroundColor="#c0c0c0"
-    Title="Lista de compras">
+    BackgroundColor="LightGray">
+    <NavigationPage.TitleView>
+        <Label Text="Lista de Compras"
+               TextColor="White"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="Header" />
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <Frame Margin="5"
-               Padding="5"
+               Grid.Row="1"
+               Padding="5,5,5,0"
                HasShadow="False"
                VerticalOptions="Start">
-            <StackLayout>
+            <StackLayout Margin="5">
                 <Label Text="Items para comprar"
                        Margin="0, 0, 0, 10"
                        FontAttributes="Bold" />
-                <CollectionView ItemsSource="{Binding ListItems}">
+                <CollectionView ItemsSource="{Binding ListItems}"
+                                SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid>
@@ -30,7 +38,7 @@
                                                WidthRequest="30"
                                                HeightRequest="30"
                                                HasShadow="False">
-                                            <Image Source="{Binding Image}"></Image>
+                                            <Image Source="{Binding Image}" />
                                         </Frame>
                                         <Label Grid.Column="1"
                                                VerticalOptions="Center"
@@ -44,8 +52,8 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
+                <Button></Button>
             </StackLayout>
         </Frame>
-
     </ContentPage.Content>
 </ContentPage>

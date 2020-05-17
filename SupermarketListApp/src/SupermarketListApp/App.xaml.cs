@@ -1,27 +1,26 @@
 ﻿using Prism;
 using Prism.DryIoc;
 using Prism.Ioc;
-using Prism.Navigation;
 using SupermarketListApp.ViewModels;
 using SupermarketListApp.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace SupermarketListApp
 {
     public partial class App : PrismApplication
     {
-        public App() : base(null) { }
+        public App() : this(null) { }
 
         public App(IPlatformInitializer initializer) :base(initializer)
         {
             Device.SetFlags(new[] { "" });
         }
 
+        /// Called when the PrismApplication has completed it's initialization process.
         protected override async void OnInitialized()
         {
             InitializeComponent();
+
             await NavigationService.NavigateAsync($"NavigationPage/ShoppingListView");
         }
 
